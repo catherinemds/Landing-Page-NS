@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  background-color: #eee;
+  z-index: 2;
+  width: 100vw;
+  align-items: center;  
+  justify-content: center;
+}
+
+#header-img {
+ max-width: 17%; 
+}
+
+nav {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  right: 0;
+}
+
+ul, nav {
+  display: none;
+  list-style: none;
+  margin: 0;
+}
+
+ nav, li {
+  margin: 0;
+}
+
+header a { 
+  font-size: 1rem;
+  margin: 0px 12px 0 0;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.main {
+	display: flex;
+	height: 100vh;
+  position: relative;
+}
+
+.main:after {
+  content: "";
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(95,44,130,1) 0%, rgba(73,160,157,1) 100%);
+  background: linear-gradient(90deg, rgba(220,36,36,1) 0%, rgba(74,86,157,1) 100%);
+  background: linear-gradient(90deg, rgba(117,127,154,1) 0%, rgba(215,221,232,1) 100%)
+}
+
+.small-text {
+  font-family: Montserrat, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  background-color: #D73851;
+  border-radius: 10px;
+  height: 30px;
+  width: 85px;
+  text-align: center;
+  border: none;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+}
+
+.big-text {
+  display: none;
+  font-family: Montserrat, sans-serif;
+  position: absolute;
+  top: 35%;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+.big-text h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+}
+
+#learn {
+  background-color:  #FFFFFF; 
+  display: inline-block;
+  color: black;
+  margin: 0 auto;
+  width: 100vw;
+  padding: 20px 40px;
+}
+
+.heading-01 {
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.heading-01:before {
+  position: absolute;
+  content: '';
+  display: none;
+  width: 20px;
+  height: 50px;
+  background: #D73851;
+  border-radius: 30px;
+  left: 15px;
+  bottom: -12%;
+}
+
+.cards {
+  max-width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.property-card
+{
+  height:45vh;
+  width:16em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+  overflow:hidden;
+  margin: 2%;
+ }
+
+.property-image
+{
+  height: 6em;
+  width: 14em;
+  padding: 1em 0;
+  right: 0;
+  position: absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.image-01 {
+  background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/mode-1.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center
+}
+
+.image-02 {
+  background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/mode-2.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: right;
+}
+
+.image-03 {
+  background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/system-photo-04.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.property-description
+{
+  background-color: #FFFFFF;
+  height:9em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+h3 {
+  margin: 0;
+}
+
+
+
+.property-social-icons
+{
+  width:1em;
+  height:1em;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
+}
+
+.property-card:hover .property-social-icons:hover
+{
+  background-color:blue;
+  cursor:pointer;
+}
+
+#trailer {
+  padding: 20px 40px;
+}
+
+.heading-02 {
+  display: inline-block;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.heading-02:before {
+  position: absolute;
+  content: '';
+  display: none;
+  width: 20px;
+  height: 50px;
+  background: #D73851;
+  border-radius: 30px;
+  left: 15px;
+}
+
+#video {
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+}
+
+form {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+input {
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+  height: 40px;
+}
+
+#submit {
+  background-color: #D73851;
+  border: none;
+  color: #FFFFFF;
+  font-size: larger;
+  margin-top: 5px;
+  width: 70%;
+  height: 43px;
+  padding-bottom: 4px;
+  border-radius: 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  header {
+    justify-content: space-between;
+    padding: 10px 35px 0;
+  }
+
+  #header-img {
+    max-width: 8%;
+    margin-left: 7%;
+  }
+
+   header a {
+    font-size: 1.3rem;
+    margin: 0 50px;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  ul, nav {
+    display: flex;
+  }
+
+  .main {
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50%;
+    background-color: #ffffff;
+  }
+
+  .small-text {
+    display: none;
+  }
+
+  .big-text {
+    display: block;
+    font-size: x-large;
+    width: 49%;
+    height: 30%;
+    left: 0;
+    right: 0;
+    top: 30%;
+    bottom: 0;
+  }
+
+  .heading-01 {
+    bottom: 11%;
+  }
+
+  .cards {
+    flex-direction: unset;
+    justify-content: center;
+
+  }
+
+  #trailer {
+    background-image: url(logo.png), url(base.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%, 90%;
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .heading-02 {
+    top: 186%;
+  }
+
+  #video {
+    display: none;
+  }
+
+  form {
+    display: flex;
+    height: 85vh;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  input {
+    width: 300px;
+  }
+
+  #submit {
+    width: 200px;
+  }
+
+}
+
+@media screen and (min-width: 1023px) {
+
+  .text-group {
+    top: 30%;
+/*    padding-left: 4%;*/
+  }
+
+  h1 {
+    font-size: 3.3rem;
+  }
+
+  #learn {
+    padding: 20px 70px;
+  }
+  .cards {
+    padding-left: 4%;
+    text-align: center;
+    align-items: baseline;
+  }
+
+  .property-image {
+    height: 8em;
+  }
+
+  .property-description {
+    height: 12em;
+  }
+
+  .text {
+    font-size: 1.3rem;
+    padding: 0 6%;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  #trailer {
+    padding: 20px 70px;
+  }
+
+  .heading-01, .heading-02 {
+    font-size: 36px;
+  }
+
+  .heading-01:before {
+    height: 60px;
+    bottom: -11%;
+    left: 40px;
+  }
+
+  .heading-02:before {
+    height: 60px;
+    left: 40px;
+  }
+}
