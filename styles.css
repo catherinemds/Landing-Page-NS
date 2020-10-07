@@ -74,9 +74,6 @@ header a:hover {
   right: 0;
   position: absolute;
   z-index: -1;
-  background: linear-gradient(90deg, rgba(95,44,130,1) 0%, rgba(73,160,157,1) 100%);
-  background: linear-gradient(90deg, rgba(220,36,36,1) 0%, rgba(74,86,157,1) 100%);
-  background: linear-gradient(90deg, rgba(117,127,154,1) 0%, rgba(215,221,232,1) 100%)
 }
 
 .small-text {
@@ -98,6 +95,7 @@ button {
   margin: 0;
   left: 50%;
   transform: translate(-50%, 0);
+  color: #ffffff;
 
 }
 
