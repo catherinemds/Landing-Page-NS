@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
   -webkit-box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
   margin: 0px;
   overflow-x: hidden;
   color: #000000;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -22,12 +22,12 @@ header {
   background-color: #eee;
   z-index: 2;
   width: 100vw;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
 }
 
 #header-img {
- max-width: 17%; 
+  max-width: 17%;
 }
 
 nav {
@@ -37,17 +37,19 @@ nav {
   right: 0;
 }
 
-ul, nav {
+ul,
+nav {
   display: none;
   list-style: none;
   margin: 0;
 }
 
- nav, li {
+nav,
+li {
   margin: 0;
 }
 
-header a { 
+header a {
   font-size: 1rem;
   margin: 0px 12px 0 0;
   text-decoration: none;
@@ -60,8 +62,8 @@ header a:hover {
 }
 
 .main {
-	display: flex;
-	height: 100vh;
+  display: flex;
+  height: 100vh;
   position: relative;
 }
 
@@ -85,7 +87,7 @@ header a:hover {
 }
 
 button {
-  background-color: #D73851;
+  background-color: #d73851;
   border-radius: 10px;
   height: 30px;
   width: 85px;
@@ -96,7 +98,6 @@ button {
   left: 50%;
   transform: translate(-50%, 0);
   color: #ffffff;
-
 }
 
 .big-text {
@@ -119,7 +120,7 @@ h1 {
 }
 
 #learn {
-  background-color:  #FFFFFF; 
+  background-color: #ffffff;
   display: inline-block;
   color: black;
   margin: 0 auto;
@@ -134,123 +135,114 @@ h1 {
 
 .heading-01:before {
   position: absolute;
-  content: '';
+  content: "";
   display: none;
   width: 20px;
   height: 50px;
-  background: #D73851;
+  background: #d73851;
   border-radius: 30px;
   left: 15px;
   bottom: -12%;
 }
 
 .cards {
-  max-width:100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.property-card
-{
-  height:45vh;
-  width:16em;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column;
-  position:relative;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+.property-card {
+  height: 45vh;
+  width: 16em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
-  overflow:hidden;
+  overflow: hidden;
   margin: 2%;
- }
+}
 
-.property-image
-{
+.property-image {
   height: 6em;
   width: 14em;
   padding: 1em 0;
   right: 0;
   position: absolute;
-  top:0px;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .image-01 {
   background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/mode-1.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position: center
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .image-02 {
   background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/mode-2.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: right;
 }
 
 .image-03 {
   background-image: url(https://www.nintendo.com/content/dam/noa/en_US/images/switch/system/system-photo-04.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
-.property-description
-{
-  background-color: #FFFFFF;
-  height:9em;
-  width:14em;
-  position:absolute;
-  bottom:0em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+.property-description {
+  background-color: #ffffff;
+  height: 9em;
+  width: 14em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 0.5em 1em;
-  text-align:center;
+  text-align: center;
 }
 
 h3 {
   margin: 0;
 }
 
-
-
-.property-social-icons
-{
-  width:1em;
-  height:1em;
-  position:absolute;
-  bottom:1em;
-  left:1em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+.property-social-icons {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.property-card:hover .property-description
-{
-  height:0em;
-  padding:0px 1em;
+.property-card:hover .property-description {
+  height: 0em;
+  padding: 0px 1em;
 }
-.property-card:hover .property-image
-{
-  height:18em;
+.property-card:hover .property-image {
+  height: 18em;
 }
 
-.property-card:hover .property-social-icons:hover
-{
-  background-color:blue;
-  cursor:pointer;
+.property-card:hover .property-social-icons:hover {
+  background-color: blue;
+  cursor: pointer;
 }
 
 #trailer {
@@ -265,11 +257,11 @@ h3 {
 
 .heading-02:before {
   position: absolute;
-  content: '';
+  content: "";
   display: none;
   width: 20px;
   height: 50px;
-  background: #D73851;
+  background: #d73851;
   border-radius: 30px;
   left: 15px;
 }
@@ -303,9 +295,9 @@ input {
 }
 
 #submit {
-  background-color: #D73851;
+  background-color: #d73851;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: larger;
   margin-top: 5px;
   width: 70%;
@@ -314,9 +306,7 @@ input {
   border-radius: 5px;
 }
 
-
 @media screen and (min-width: 768px) {
-
   header {
     justify-content: space-between;
     padding: 10px 35px 0;
@@ -327,7 +317,7 @@ input {
     margin-left: 7%;
   }
 
-   header a {
+  header a {
     font-size: 1.3rem;
     margin: 0 50px;
   }
@@ -336,7 +326,8 @@ input {
     justify-content: center;
   }
 
-  ul, nav {
+  ul,
+  nav {
     display: flex;
   }
 
@@ -370,7 +361,6 @@ input {
   .cards {
     flex-direction: unset;
     justify-content: center;
-
   }
 
   #trailer {
@@ -379,7 +369,7 @@ input {
     background-position: center;
     background-size: 25%, 90%;
     display: inline-block;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 100vw;
     height: 100vh;
   }
@@ -406,14 +396,12 @@ input {
   #submit {
     width: 200px;
   }
-
 }
 
 @media screen and (min-width: 1023px) {
-
   .text-group {
     top: 30%;
-/*    padding-left: 4%;*/
+    /*    padding-left: 4%;*/
   }
 
   h1 {
@@ -450,7 +438,8 @@ input {
     padding: 20px 70px;
   }
 
-  .heading-01, .heading-02 {
+  .heading-01,
+  .heading-02 {
     font-size: 36px;
   }
 
